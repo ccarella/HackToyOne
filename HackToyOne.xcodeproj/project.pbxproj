@@ -14,6 +14,9 @@
 		5E41B33A1ABE0CFB00687FDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E41B3391ABE0CFB00687FDB /* Images.xcassets */; };
 		5E41B33D1ABE0CFB00687FDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E41B33B1ABE0CFB00687FDB /* LaunchScreen.xib */; };
 		5E41B3491ABE0CFB00687FDB /* HackToyOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41B3481ABE0CFB00687FDB /* HackToyOneTests.swift */; };
+		5E41B3541ABE137F00687FDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E41B3391ABE0CFB00687FDB /* Images.xcassets */; };
+		5E41B3561ABE15D200687FDB /* haring-square-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E41B3551ABE15D200687FDB /* haring-square-120.png */; };
+		5E41B3581ABE170500687FDB /* haring-1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E41B3571ABE170500687FDB /* haring-1242x2208.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,8 @@
 		5E41B3421ABE0CFB00687FDB /* HackToyOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackToyOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E41B3471ABE0CFB00687FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E41B3481ABE0CFB00687FDB /* HackToyOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackToyOneTests.swift; sourceTree = "<group>"; };
+		5E41B3551ABE15D200687FDB /* haring-square-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "haring-square-120.png"; sourceTree = "<group>"; };
+		5E41B3571ABE170500687FDB /* haring-1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "haring-1242x2208.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,8 @@
 				5E41B3361ABE0CFB00687FDB /* Main.storyboard */,
 				5E41B3391ABE0CFB00687FDB /* Images.xcassets */,
 				5E41B33B1ABE0CFB00687FDB /* LaunchScreen.xib */,
+				5E41B3551ABE15D200687FDB /* haring-square-120.png */,
+				5E41B3571ABE170500687FDB /* haring-1242x2208.png */,
 				5E41B32E1ABE0CFB00687FDB /* Supporting Files */,
 			);
 			path = HackToyOne;
@@ -164,9 +171,11 @@
 				TargetAttributes = {
 					5E41B32A1ABE0CFB00687FDB = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = BGG7CH5SSG;
 					};
 					5E41B3411ABE0CFB00687FDB = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = BGG7CH5SSG;
 						TestTargetID = 5E41B32A1ABE0CFB00687FDB;
 					};
 				};
@@ -196,8 +205,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E41B3381ABE0CFB00687FDB /* Main.storyboard in Resources */,
+				5E41B3581ABE170500687FDB /* haring-1242x2208.png in Resources */,
 				5E41B33D1ABE0CFB00687FDB /* LaunchScreen.xib in Resources */,
 				5E41B33A1ABE0CFB00687FDB /* Images.xcassets in Resources */,
+				5E41B3561ABE15D200687FDB /* haring-square-120.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E41B3541ABE137F00687FDB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = HackToyOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = HackToyOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,6 +376,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -373,6 +389,7 @@
 				INFOPLIST_FILE = HackToyOneTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackToyOne.app/HackToyOne";
 			};
 			name = Debug;
@@ -381,6 +398,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -388,6 +407,7 @@
 				INFOPLIST_FILE = HackToyOneTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackToyOne.app/HackToyOne";
 			};
 			name = Release;
